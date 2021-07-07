@@ -1,4 +1,5 @@
 var { execSync } = require('child_process');
+var os = require('os');
 var env = process.env;
 
 var gitHash = execSync('git log -1 --format=%H', { encoding: 'utf-8' });
@@ -9,7 +10,7 @@ var argv = '';
 var options = { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false };
 var buildDateTime = new Date().toLocaleString('zh-CN', options).replace(/[^0-9]/g, '');
 var argv = process.argv.slice(2, process.argv.length).join(',');
-envName = env.USERNAME;
+envName = os.userInfo().username;
 var buildInfo = {
     SpecificationVersion: gitHash,
     SpecificationTitle: SpecificationTitle,
