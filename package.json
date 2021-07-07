@@ -1,0 +1,17 @@
+{
+  "name": "buildinfowebpackplugin",
+  "version": "1.0.0",
+  "description": "create info for project builded",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "typings/index",
+  "keywords": [
+    "webpack",
+    "build",
+    "version"
+  ],
+  "author": "hongliyan1024",
+  "license": "ISC"
+}
