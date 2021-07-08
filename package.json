@@ -1,6 +1,6 @@
 {
   "name": "build-record-webpack-plugin",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "create info for project builded",
   "main": "index.js",
   "scripts": {

@@ -25,7 +25,7 @@ function BuildRecordWebpackPlugin(props) {
         const copyrightText = JSON.stringify(buildInfo);
         let compilerCompatible = function(compilation, callback) {
             if (props.assets) {
-                compilation.assets[SpecificationTitle + '_version.txt'] = {
+                compilation.assets[SpecificationTitle + '_version.json'] = {
                     source: function() {
                         return copyrightText;
                     },
