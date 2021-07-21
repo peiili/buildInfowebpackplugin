@@ -44,11 +44,11 @@ configureWebpack: config => {
 
 ``` javascript
 { 
-      SpecificationVersion: '5b508b41e4320d580cb1524f6bf37c2ab50b89fe',  // git hash
-      SpecificationTitle: 'elc-ui-pc',  // 工程名称
-      Timeofbuild: '07071436',          // 打包日期
-      argvofbuild: 'build',			    // 打包参数
-      CreatedBy: 'Administrator'        // 打包环境
+      SpecificationVersion: '15315881……',  // git hash
+      SpecificationTitle: 'project-name',  // 工程名称
+      Timeofbuild: '07071436',             // 打包日期
+      argvofbuild: 'build',			       // 打包参数
+      CreatedBy: 'Administrator'           // 打包环境
 }
 ```
 

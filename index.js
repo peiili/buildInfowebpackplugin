@@ -1,14 +1,11 @@
 var { execSync } = require('child_process');
 var os = require('os');
+var { moment }= require('./unit')
 var env = process.env;
-
 var gitHash = execSync('git log -1 --format=%H', { encoding: 'utf-8' });
 var SpecificationTitle = env.npm_package_name;
 var envName = '';
-var buildDateTime = '';
-var argv = '';
-var options = { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false };
-var buildDateTime = new Date().toLocaleString('zh-CN', options).replace(/[^0-9]/g, '');
+var buildDateTime = moment().format('YYYY-MM-DD HH:mm:ss')
 var argv = process.argv.slice(2, process.argv.length).join(',');
 envName = os.userInfo().username;
 var buildInfo = {
