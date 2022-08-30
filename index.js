@@ -2,7 +2,7 @@ var { execSync } = require('child_process');
 var os = require('os');
 var { moment }= require('./unit')
 var env = process.env;
-var gitHash = execSync('git log -1 --format=%H', { encoding: 'utf-8' });
+var gitHash = execSync('git rev-parse HEAD');
 var SpecificationTitle = env.npm_package_name;
 var envName = '';
 var buildDateTime = moment().format('YYYY-MM-DD HH:mm:ss')
